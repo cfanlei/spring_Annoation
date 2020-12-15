@@ -48,6 +48,7 @@ git config --list
 * git add xxx.xxx 将为跟踪文件修改为已跟踪/将文件添加到暂存区
 * git reset xxx.xxx 取消跟踪状态
 * git commit -m "提交信息"    提交文件到版本库
+  * -a
 * git rm xxx.xxx   删除 工作区文件
 * touch  .gitignore  创建.gitignore文件
 * git log 产看日志记录
@@ -66,4 +67,37 @@ git config --list
   *  pull 会自动合并
      * git pull origin master --allow-unrelated-histories  //允许合并，当从远端拉取报合并失败时添加--allow-unrelated-histories 强行拉取下来
 
-* git push origin master  //origin代表远程仓库地址  ，master是远程仓库的分支
+* git push origin master  //origin代表远程仓库地址  ，master是远程仓库的分支   推送
+
+
+
+## 3.分支
+
+* git branch 查看本地分支
+  * -r 查看远程分支git
+  * -a 查看所有分支
+
+* git branch xxx 创建xxx分支
+
+* git checkout xxx 切换到xxx分支
+
+* git push origin xxxbranch 推送到远端的xxx分支
+
+### 1.合并分支
+
+* git merge b1  需要在master分支下操作，将b1分支合并到master分支上
+  * 合并并不是一直顺利，如在两个不同的分支中，对同一个文件的同一个部分进行不同的修改，git会提示文件冲突，此时需要打开文件修复冲突内容，最后执行git add命令来标识冲突已解决
+
+### 2.删除本地分支
+
+* git branch -d xxxbranch 删除本地xxxbranch
+  * -d /D 删除/强制删除本地分支
+
+### 3.删除远端分支
+
+* git push origin -d xxxbranch   删除远端的xxx分支
+
+### 注： 
+
+* 1.创建分支的时候，是基于当前分支为基础创建的新分支
+
