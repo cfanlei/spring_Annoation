@@ -28,7 +28,7 @@ git config --list
 
 #  git 目录
 
-<img src="E:\笔记\img\gitmenu.png" style="zoom:66%;" />
+<img src="E:\笔记\gitlearn\img\gitmenu.png" style="zoom:67%;" />
 
 *  hooks        		    目录包含客户端或服务端的钩子脚本
 * info                         包含一个全局性的排除文件 
@@ -63,4 +63,7 @@ git config --list
 * git pull ~  ,git fetch ~从远程仓库拉取(pull)与抓取(fetch)
   *  fetch 不会自动合并(merge)数据
     * git merge origin/master 手动合并
-  * pull 会自动合并
+  *  pull 会自动合并
+     * git pull origin master --allow-unrelated-histories  //允许合并，当从远端拉取报合并失败时添加--allow-unrelated-histories 强行拉取下来
+
+* git push origin master  //origin代表远程仓库地址  ，master是远程仓库的分支
