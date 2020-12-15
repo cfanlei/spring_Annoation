@@ -69,7 +69,11 @@ git config --list
 
 * **git push origin master**  //origin代表远程仓库地址  ，master是远程仓库的分支   推送
 
+#### 修改远程仓库地址：
 
+```linux
+git remote set-url origin <remote-url>
+```
 
 ## 3.分支
 
