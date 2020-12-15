@@ -102,9 +102,23 @@ git config --list
 * 1.创建分支的时候，是基于当前分支为基础创建的新分支
 * 2.本地的主分支才能推送到远端的分支上
 
-## 4.标签
+## 4.标签（成为历史的版本）
 
 * git tag 查看标签
 * git tag tagName 创建标签
 * git show tagName 查看对应名称的标签
 * git push origin tagName 向远端推送标签
+
+### 1.检出标签
+
+* git checkout -b branchName tagName  建立一个新分支，指向某个tag
+
+### 2.删除标签
+
+#### 1. 删除本地标签
+
+* git tag -d tagName
+
+####  2.删除远程标签
+
+* git push origin :refs/tags/tagName
