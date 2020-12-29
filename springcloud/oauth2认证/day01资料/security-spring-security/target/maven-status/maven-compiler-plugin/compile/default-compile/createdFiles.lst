@@ -1,0 +1,6 @@
+com\itheima\security\springmvc\controller\LoginController.class
+com\itheima\security\springmvc\config\WebConfig.class
+com\itheima\security\springmvc\config\WebSecurityConfig.class
+com\itheima\security\springmvc\init\SpringSecurityApplicationInitializer.class
+com\itheima\security\springmvc\config\ApplicationConfig.class
+com\itheima\security\springmvc\init\SpringApplicationInitializer.class
